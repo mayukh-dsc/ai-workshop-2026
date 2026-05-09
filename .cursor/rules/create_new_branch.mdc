@@ -1,0 +1,49 @@
+---
+description: >-
+  In Agent chat, when the user asks you to implement, modify, fix, or refactor code
+  (any task that will change source or config in this repo), apply this git branch
+  workflow before other tool calls. Do not use this workflow for Ask-only
+  explanations, research without edits, or when the user explicitly says to stay on
+  an existing branch or skip branching.
+globs: apps/**/*, .cursor/**/*
+alwaysApply: false
+---
+
+# Git workflow — create a task branch (code changes)
+
+## When this applies
+
+- **Agent** is making or preparing **code changes** (features, fixes, refactors, config updates under the globs above).
+- **Skip** if the user says **use existing branch**, **work on branch X**, or **do not create a branch**.
+
+## First actions before other tools
+
+From the **repository root** (Cursor workspace root), run in order:
+
+```bash
+git branch --show-current
+git checkout -b workshop/<branch-name-from-user-request>
+git branch --show-current
+```
+
+Use the shell tool for these commands **before** reads, searches, or edits for that task.
+
+## Branch naming
+
+Turn the user’s request into: `workshop/<kebab-case-description>`.
+
+**Examples**:
+
+- "fix error dialog" → `workshop/fix-error-dialog`
+- "add PS5 QR exclusion" → `workshop/add-ps5-qr-exclusion`
+- "update component styles" → `workshop/update-component-styles`
+
+## Rules
+
+- **One new branch per new coding task** (even if already on `workshop/*`), unless the user opts out as above.
+- **Extract the task** from the first message that asks for code work, then name the branch.
+- **Git commands first** for that task, then the rest of the work.
+
+## Why
+
+Keeps each change set reviewable and isolated on its own branch.
