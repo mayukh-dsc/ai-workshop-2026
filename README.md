@@ -5,12 +5,13 @@ In this workshop, we will use Cursor. We will use `composer-2` model throughout.
 ### In this workshop we build together:
 1. A Calculator app from scratch using AI
 2. Understand about Agent Context, Rules, Skills and Subagents
-3. We create a new Rule, Skills and Subagents
-4. We create a new Skill
-5. We create new Subagents
-6. We learn how to multitask using agents
-7. We will use mcp servers
-8. Cursor 3.0 and multiagent mode
+3. We learn about Rule, Skills and Subagents
+4. We create a new Rule
+5. We create a new Skill
+6. We create new Subagents
+7. We learn how to multitask using agents
+8. We will use mcp servers
+9. Cursor 3.0 and multiagent mode
 
 ### Steps we follow:
 
