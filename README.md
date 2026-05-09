@@ -56,3 +56,20 @@ use /add-unit-test-from-description to add a test for:
 
 
 #### Subagents:
+1. Subagents can run parallely AND independently. 
+2. We will create 2 subagents which can perform different tasks and run them together.
+2. The first subagent is to run test coverage. Prompt in `agent` mode:
+```
+/create-subagent to run the test Coverage
+```
+3. The second subagent is to get a maximum five pointer summary:
+```
+/create-subagent to generate summary in maximum 5 pointers.
+```
+4. Now will run both the subagents together. Prompt in `agent` mode:
+```
+Use test-coverage subagent to get test coverage. 
+also summarize the calculator project technical details using five-bullet-summary.
+```
+5. If we run an agent to get the coverage and ask the same agent to get a summary of the project, you will see more context is going to be used. This is because, subagents are `independent` and has independent context too.
+
