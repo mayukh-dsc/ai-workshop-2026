@@ -29,7 +29,7 @@ In this workshop, we will use Cursor. We will use `composer-2` model throughout.
 
 ### 3. MCP Servers: 
 
-1. Go to https://cursor.com/docs/context/mcp/directory
+1. Go to https://cursor.com/docs/context/mcp/directory [need to login]
 2. Add Atlassian and authenticate
 
 ### 4. Skills:
