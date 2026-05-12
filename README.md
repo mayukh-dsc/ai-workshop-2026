@@ -11,7 +11,6 @@ In this workshop, we will use Cursor. We will use `composer-2` model throughout.
 6. We learn how to multitask using agents
 7. We will use mcp servers
 
-## Steps we follow:
 
 ## 1. Create the new app:
 1. We use `calculator_app_creation.plan.md` to scaffold the basic calculator app. Just click 'Build' on the plan and we are ready.
