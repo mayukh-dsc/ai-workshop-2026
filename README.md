@@ -34,9 +34,15 @@ In this workshop, we will use Cursor. We will use `composer-2` model throughout.
 
 ### 4. Skills:
 
-1. Use this prompt:  `/search-company-knowledge tell me about multiverse` [This skill is coming from Atlassian plugin we just added]. If you are authenticated, you should be able to see a summary of Multiverse.
+1. Use this prompt:   
+```
+/search-company-knowledge tell me about multiverse
+```
+[This skill is coming from Atlassian plugin we just added]. If you are authenticated, you should be able to see a summary of Multiverse.
+
 2. Lets download a new skill and use it from https://skills.sh/. Type this command to install an accessibility skill [DO INSTALL LOCALLY. In Project Scope]:
 ```
+// RUN ON TERMINAL. NOT A PROMPT!
 npx skills add https://github.com/addyosmani/web-quality-skills --skill accessibility
 ```
 3. Now create a new agent and use this skill to assess accessibility problems in the calculator apps in `Ask` mode. Prompt: `use /accessibility skill to audit`
@@ -72,7 +78,7 @@ use /add-unit-test-from-description to add a test for:
 4. Now will run both the subagents together. Prompt in `agent` mode:
 ```
 Use test-coverage subagent to get test coverage. 
-also summarize the calculator project technical details using five-bullet-summary.
+also summarize the calculator project technical details using five-bullet-summary subagent.
 ```
 5. If we run an agent to get the coverage and ask the same agent to get a summary of the project, you will see more context is going to be used. This is because, subagents are `independent` and has independent context too.
 
