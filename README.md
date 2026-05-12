@@ -2,7 +2,7 @@
 
 In this workshop, we will use Cursor. We will use `composer-2` model throughout.
 
-## In this workshop we build together:
+## Agenda:
 1. A Calculator app from scratch using AI
 2. Understand about Agent Context, Rules, Skills and Subagents
 3. Create a new Rule
