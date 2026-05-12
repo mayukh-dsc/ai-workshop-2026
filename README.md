@@ -13,7 +13,7 @@ In this workshop, we will use Cursor. We will use `composer-2` model throughout.
 
 
 ## 1. Create the new app:
-1. We use `calculator_app_creation.plan.md` to scaffold the basic calculator app. Just click 'Build' on the plan and we are ready.
+1. We use `.cursor/plans/calculator_app_creation.plan.md` to scaffold the basic calculator app. Just click 'Build' on the plan and we are ready.
 2. Lets run the app using `npm run dev`
 
 ## 2. Rules: 
